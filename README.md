@@ -1,6 +1,8 @@
 # IsoPredict
 A program for training, testing, and applying isotopic models for region-of-origin prediction in Latin America.
 
+Preferred Citation: Delgado, Thomas A. 2023. "Towards the Identification of Unidentified Remains at the US-Mexico Border: A Stable Isotope and Machine Learning Approach." MA Thesis, California State University, Chico.
+
 ## Using the Program
 This program has been extensively documented for ease-of-use. First, ensure all libraries and required functions are accesed by the program. The specific purpose of each created function is documented. The main program begins with accessing, sorting, and splitting the data,
 
@@ -12,9 +14,9 @@ Lines 175 to 243 provide parameter grids for six different machine learning algo
 
 The results from tuning can then be passed to the algorithms in the following section. This section simply defines the algorithm used for analysis and the parameters they will use in the process. The section after allows the user to apply those models to the training data for performance validation.
 
-When the user is ready to evaluate these models on novel data, the t
+When the user is ready to evaluate these models on novel data, the following "Testing" section can be use. To ensure the models are not learning for these data run this code last. If any model parameters are changed after testing a new train/test split will need to be done and each algorithm re-tuned.
 
-
+The final code chunk allows the user to use these models to predict region-of-origin into one of the specifed regions (using the variable 'regions'. Provide the file name for prediction to the 'human' variable (does not need to be human data, this variable name was chosen due to the program's intended application). Prediction probabilities based on the trained, tuned, and tested models using will then be provided. A word of advice, in cases of 100% predicition probability use another algorithm to confirm as it's best to be skeptical of perfect certainties. 
 
 ## Available Data
 meswd_kriged_HR -> high resolution hydrogen and oxygen isotopic data for Mesoamerica from Emperical Bayesian Kriging isoscapes made from tap and bottled water data available from waterisotopes.org.
