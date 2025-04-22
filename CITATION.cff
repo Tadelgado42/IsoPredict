@@ -10,5 +10,6 @@ authors:
   given-names: "Eric J."
 title: "IsoPredict"
 version: 1.0.1
+doi: https://doi.org/10.5281/zenodo.15265373
 date-released: 2023-05-18
 url: "https://github.com/Tadelgado42/IsoPredict"
